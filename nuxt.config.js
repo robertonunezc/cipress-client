@@ -16,7 +16,7 @@ export default {
     ]
   },
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:1337/'
+    apiBaseUrl: process.env.BASE_URL || 'http://localhost:1337/'
   },
   /*
   ** Customize the progress-bar color

@@ -22,7 +22,7 @@ export const mutations = {
 export const actions = {
     async getCategories({ commit }) {
         try {
-            await this.$axios.$get(`"${process.env.baseUrl}categories/"`)
+            await this.$axios.$get(`"${process.env.apiBaseUrl}categories/"`)
                 .then(res => {
                     console.log(res)
                     commit('setCategories', res)
@@ -41,7 +41,7 @@ export const actions = {
     },
     async getAnnouncements({ commit }) {
         try {
-            await this.$axios.$get(`"${process.env.baseUrl}products/"`)
+            await this.$axios.$get(`"${process.env.apiBaseUrl}products/"`)
                 .then(res => {
                     console.log(res)
                     commit('setAnnouncements', res)
@@ -54,7 +54,7 @@ export const actions = {
     },
     async setAnnouncement({ commit }, payload) {
         try {
-            await this.$axios.$post(`"${process.env.baseUrl}products/"`, payload)
+            await this.$axios.$post(`"${process.env.apiBaseUrl}products/"`, payload)
                 .then(res => {
                     console.log(res)
                     commit('setAnnouncement', res)
