@@ -22,7 +22,7 @@ export const mutations = {
 export const actions = {
     async getCategories({ commit }) {
         try {
-            await this.$axios.$get("http://localhost:1337/categories/")
+            await this.$axios.$get("http://cipress-vecinos.herokuapp.com/categories/")
                 .then(res => {
                     console.log(res)
                     commit('setCategories', res)
@@ -41,7 +41,7 @@ export const actions = {
     },
     async getAnnouncements({ commit }) {
         try {
-            await this.$axios.$get("http://localhost:1337/products/")
+            await this.$axios.$get("http://cipress-vecinos.herokuapp.com/products/")
                 .then(res => {
                     console.log(res)
                     commit('setAnnouncements', res)
@@ -54,7 +54,7 @@ export const actions = {
     },
     async setAnnouncement({ commit }, payload) {
         try {
-            await this.$axios.$post("http://localhost:1337/products/", payload)
+            await this.$axios.$post("http://cipress-vecinos.herokuapp.com/products/", payload)
                 .then(res => {
                     console.log(res)
                     commit('setAnnouncement', res)
