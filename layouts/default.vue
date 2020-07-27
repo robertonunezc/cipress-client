@@ -62,10 +62,10 @@ html {
   justify-content: center;
   align-items: center;
   min-height: 50px;
-  background-color: #343a40;
-  color: white;
+  /*background-color: #343a40;*/
+  color: black;
 }
 .footer a {
-  color: white;
+  color: black;
 }
 </style>

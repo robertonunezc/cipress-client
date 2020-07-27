@@ -2,6 +2,9 @@
   <div class="m-2">
     <div class="row">
       <div class="col-12">
+        <div class="alert alert-success" v-if="createdDone">Anuncio creado con éxito</div>
+      </div>
+      <div class="col-12">
         <h3>Crear un anuncio</h3>
         <hr />
       </div>
@@ -109,6 +112,7 @@
 export default {
   data() {
     return {
+      createdDone: false,
       announcement: {
         short_name: '',
         description: '',
@@ -126,8 +130,8 @@ export default {
   },
   methods: {
     addAnnouncement() {
-      this.$store.dispatch('setAnnouncement', this.announcement);
-      
+      this.$store.dispatch('setAnnouncement', this.announcement)
+      this.createdDone = true
     }
   }
 }
