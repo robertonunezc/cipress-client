@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div>
     <!-- <div class="card mt-2">
       <div class="card-body bg-warning">
         Este sitio es solo para el uso exclusivo de los vecinos de Cipress. Se les pide sean respetuosos y usen la plataforma
