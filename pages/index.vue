@@ -137,6 +137,9 @@ body {
   color: white;
   text-align: center;
 }
+.categories {
+  flex-wrap: wrap !important;
+}
 .add-annonunc-btn:hover {
   text-decoration: none;
   border: solid 2px #d32323;
